@@ -278,20 +278,18 @@ Write a function $tmpFn$ which takes a single argument $xVec$. The function shou
 ```{r A15}
 xVec <- c(-2, -1, 0 ,1, 2, 3, 4)
 
-compute <- function(x) {
-  tempFn <- 0
+tempFn <- function(x) {
   if (x < 0){
-    tempFn <- `^`(x,2) + (2 * x) + 3
+    return(`^`(x,2) + (2 * x) + 3)
   }else if( x >= 0 && x <= 2){
-    tempFn <- x + 3
+    return(x + 3)
   }else if(x >= 2){
-   tempFn <- `^`(x,2) + (4 * x) - 7
+    return(`^`(x,2) + (4 * x) - 7)
   }
-  return(tempFn)
 }
 
 # Taking value from xVec
-lapply(xVec, compute)
+lapply(xVec, tempFn)
 ```
 
 
