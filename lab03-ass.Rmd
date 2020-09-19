@@ -236,7 +236,7 @@ q2_b
 
 a. Make a scatterplot as shown below with pop on the x-axis and lifeExp on the y-axis using gapminder_2007. Does there appear to be a relationship between population and life expectancy? One line of code is provided for creating `gapminder_2007 gapminder_2007 <- gapminder %>% filter(year == 2007)`  
 </br>
-_There does not appear to be a relationship between lifeExp and population which can be identified from the scatterplot_  
+**_There does not appear to be a correlation between `lifeExp` and `population` which can be identified from the scatterplot._**  
 
 ```{r A17 (a)}
 gapminder_2007 <- gapminder %>% 
