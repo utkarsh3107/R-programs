@@ -194,7 +194,7 @@ by_continent <- gapminder %>%
                  
 ggplot(by_continent, aes(x= gdpPercap, y=lifeExp, color=continent)) + 
   geom_point()+ 
-  facet_grid(~continent) + 
+  facet_wrap(~continent) + 
   geom_smooth(method="loess") 
 ```
 
